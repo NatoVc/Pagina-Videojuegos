@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Interactiva</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./cssa/encuesta.css">
+</head>
+<body>
+
+    <header class="menu">
+        <ul class="menu-links">
+            <li><a href="indexa.html">Inicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="suscripciones.html">Suscripciones</a></li>
+            <li><img src="./imagenes/twitter.svg"><a href="https://twitter.com/renat0_v"></a></li>
+        </ul>
+    </header>
+
+    <form method="post">
+        <div class="forms-grupos">
+            <label><b>Nombre</b></label>
+            <input type="text" name="name-label" id="nombre" placeholder="Ingresa tu nombre" required>
+        </div>
+
+        <div class="forms-grupos">
+            <label><b>Email</b></label>
+            <input type="Email" name="Email-label" id="Email" placeholder="Ingresa tu Email" required>
+        </div>
+
+        <div class="forms-grupos">
+            <label><b>Edad</b></label>
+            <input type="number" name="number-label" id="edad" placeholder="Ingresa tu Edad" required min="16" max="99">
+        </div>
+
+        <div class="forms-grupos">
+            <p>Rol</p>
+            <label>
+                <select name="usuario-opcion" id="select" class="selectop">
+                    <option disabled selected value>Selecciona tu Rol</option>
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Profesor">Profesor</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="forms-grupos">
+            <p><b>Como fue tu experiencia en nuestra pagina?</b></p>
+
+            <label>
+                <input type="radio" name="opcion-usuario" id="Muy buena">
+                <b>Muy buena</b>
+            </label>
+
+            <label>
+                <input type="radio" name="opcion-usuario" id="Buena">
+                <b>Buena</b>
+            </label>
+
+            <label>
+                <input type="radio" name="opcion-usuario" id="Regular">
+                <b>Regular</b>
+            </label>
+
+            <label>
+                <input type="radio" name="opcion-usuario" id="Mala">
+                <b>Mala</b>
+            </label>
+
+            <label>
+                <input type="radio" name="opcion-usuario" id="Pesima">
+                <b>Pesima</b>
+            </label>
+
+        </div>
+
+        <div class="forms-grupos">
+            <p><b>Cual Fue tu Pagina Favorita?</b></p>
+
+            <label>
+                <input type="radio" name="" id="Inicio">
+                <b>Inicio</b>
+            </label>
+
+            <label>
+                <input type="radio" name="" id="suscripciones">
+                <b>Suscripciones</b>
+            </label>
+
+            <label>
+                <input type="radio" name="" id="Contacto">
+                <b>Conctacto</b>
+            </label>
+
+            <label>
+                <input type="radio" name="" id="Juegos">
+                <b>Juegos</b>
+            </label>
+        </div>
+
+        <div class="forms-grupos">
+            <p><b>Escribenos tus comentarios</b></p>
+            <label>
+                <input type="text" name="comment" id="comentarios" placeholder="Escribe tu opinion acerca de nuestra pagina">
+            </label>
+        </div>
+        <div class="button">
+            <a type="submit" href="indexa.html" value="enviar">enviar</a>
+        </div>
+    </form>
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Pagina de videosjuegos</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="indexa.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="suscripciones.html" class="nav__links">Suscripciones</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="contacto.html" class="nav__links">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://twitter.com/renat0_v" class="footer__icons"><img src="./imagenes/twitter.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Renato Facundo Vargas Carrion</h3>
+        </section>
+    </footer>
+
+</body>
+</html>
